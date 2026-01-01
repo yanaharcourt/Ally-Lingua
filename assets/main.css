@@ -596,7 +596,7 @@ h6 {
     }
     .word-layer:nth-child(2) {
         --top-position: 34%;
-        --left-position: 15%;
+        --left-position: 35%;
     }
     .word-layer:nth-child(3) {
         --top-position: 46%;
@@ -604,7 +604,7 @@ h6 {
     }
     .word-layer:nth-child(4) {
         --top-position: 60%;
-        --left-position: 15%;
+        --left-position: 55%;
     }
     .word-layer:nth-child(5) {
         --top-position: 74%;
@@ -621,24 +621,24 @@ h6 {
         font-size: 64px !important;
     }
     .word-layer:nth-child(1) {
-        --top-position: 24%;
+        --top-position: 22%;
         --left-position: 5%;
     }
     .word-layer:nth-child(2) {
-        --top-position: 36%;
-        --left-position: 12%;
+        --top-position: 34%;
+        --left-position: 35%;
     }
     .word-layer:nth-child(3) {
-        --top-position: 48%;
+        --top-position: 46%;
         --left-position: 5%;
     }
     .word-layer:nth-child(4) {
-        --top-position: 62%;
-        --left-position: 12%;
+        --top-position: 60%;
+        --left-position: 55%;
     }
     .word-layer:nth-child(5) {
-        --top-position: 76%;
-        --left-position: 25%;
+        --top-position: 74%;
+        --left-position: 30%;
     }
 }
 
