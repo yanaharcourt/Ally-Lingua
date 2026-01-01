@@ -1677,7 +1677,6 @@ h6 {
     transform: scale(1.02);
 }
 
-/* Адаптив для разрешений от 1024px и ниже */
 @media screen and (max-width: 1024px) {
     .programs-section {
         margin-left: 0 !important;
@@ -1704,7 +1703,6 @@ h6 {
         flex: none !important;
     }
 
-    /* Заголовок как .feature-header h4 */
     .programs-text h1 {
         font-size: 28px !important;
         margin-bottom: 15px !important;
@@ -1716,13 +1714,13 @@ h6 {
     }
 
     .programs-images {
-        display: none !important; /* Полностью скрываем фото на мобильных */
+        display: none !important; 
     }
 
     .program-tabs {
         display: flex !important;
         justify-content: center !important;
-        flex-wrap: wrap !important; /* Разрешаем перенос текста на новую строку */
+        flex-wrap: wrap !important; 
         gap: 8px !important;
         border-bottom: none !important;
         margin-bottom: 30px !important;
@@ -1734,7 +1732,7 @@ h6 {
         margin-right: 0 !important;
         background: #f8f8f8 !important;
         border-radius: 6px !important;
-        white-space: normal !important; /* Позволяет тексту внутри таба переноситься */
+        white-space: normal !important; 
         text-align: center !important;
         border: none !important;
         flex: none !important;
@@ -1758,14 +1756,12 @@ h6 {
     }
 }
 
-/* 768px */
 @media screen and (max-width: 768px) {
     .programs-text h1 {
         font-size: 28px !important;
     }
 }
 
-/* 414px */
 @media screen and (max-width: 414px) {
     .programs-section {
         padding: 40px 15px !important;
@@ -1778,21 +1774,18 @@ h6 {
     }
 }
 
-/* 375px */
 @media screen and (max-width: 375px) {
     .programs-text h1 {
         font-size: 26px !important;
     }
 }
 
-/* 360px */
 @media screen and (max-width: 360px) {
     .program-tab {
         font-size: 13px !important;
     }
 }
 
-/* 320px */
 @media screen and (max-width: 320px) {
     .programs-text h1 {
         font-size: 24px !important;
@@ -1803,6 +1796,7 @@ h6 {
         padding: 6px 10px !important;
     }
 }
+
 /*--------------------------------------------------------------
 # OUR TEACHERS
 --------------------------------------------------------------*/
@@ -1969,7 +1963,71 @@ h6 {
     font-size: 14px;
     font-weight: 500;
 }
+@media (max-width: 1920px) {
+    .container { max-width: 1360px; }
+}
 
+@media (max-width: 1600px) {
+    .teacher-profile { display: flex; gap: 24px; }
+    .teacher-image { flex: 0 0 38%; max-width: 38%; }
+    .teacher-info { flex: 1; min-width: 0; padding: 36px 44px; box-sizing: border-box; }
+    .quote h4:before { left: 0; }
+}
+
+@media (max-width: 1280px) {
+    .teachers-list { width: 28%; padding-right: 18px; }
+    .teacher-image { flex-basis: 40%; max-width: 40%; }
+    .teacher-info { padding: 32px 38px; }
+    .section-header h2 { font-size: 36px; }
+}
+
+@media (max-width: 1024px) {
+    .teachers-content { display: grid; grid-template-columns: 260px 1fr; gap: 20px; }
+    .teachers-list { width: 100%; }
+    .teacher-profile { flex-direction: row; }
+    .teacher-image { flex-basis: 40%; max-width: 40%; height: 340px; }
+    .teacher-info { flex: 1; min-width: 0; padding: 26px 32px; }
+    .quote h4,
+    .teacher-bio p { overflow-wrap: break-word; }
+}
+
+@media (max-width: 768px) {
+    .teachers-content { grid-template-columns: 1fr; }
+    .teacher-profile { flex-direction: column; }
+    .teacher-image { width: 100%; max-width: 100%; height: 300px; }
+    .teacher-info { width: 100%; padding: 24px; }
+    .section-header h2 { font-size: 30px; }
+    .teacher-item h3 { font-size: 18px; }
+}
+
+@media (max-width: 414px) {
+    .teachers-section { padding: 52px 0; }
+    .teacher-image { height: 260px; }
+    .teacher-info { padding: 20px; }
+    .section-header h2 { font-size: 26px; }
+    .tag { padding: 6px 14px; font-size: 13px; }
+}
+
+@media (max-width: 375px) {
+    .teacher-image { height: 230px; }
+    .teacher-info { padding: 18px; }
+    .quote h4 { font-size: 17px; }
+}
+
+@media (max-width: 360px) {
+    .teacher-bio p { font-size: 14px; }
+    .tag { font-size: 12px; }
+}
+
+@media (max-width: 320px) {
+    .section-header h2 { font-size: 22px; }
+    .teacher-image { height: 210px; }
+    .quote h4 { font-size: 16px; }
+}
+
+/*--------------------------------------------------------------
+#  METRICS
+--------------------------------------------------------------*/
 .success-metrics {
     display: flex;
     justify-content: center;
@@ -1998,6 +2056,11 @@ h6 {
     max-width: 152px;
 }
 
+
+
+/*--------------------------------------------------------------
+# TESTIMONIAL SECTION ? 
+--------------------------------------------------------------*/
 .testimonials-section {
     padding: 60px 0;
     max-width: 1200px;
@@ -2147,9 +2210,10 @@ h6 {
     transform: translateY(-2px);
 }
 
+
 /*--------------------------------------------------------------
-        # TESTIMONIAL SECTION
-        --------------------------------------------------------------*/
+# TESTIMONIAL SECTION
+--------------------------------------------------------------*/
 .testimonials-section {
     padding: 60px 0;
     max-width: 1200px;
