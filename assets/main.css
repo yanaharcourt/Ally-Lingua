@@ -1042,6 +1042,7 @@ h6 {
         font-size: 36px;
     }
 }
+
 /*--------------------------------------------------------------
 # Benefits 
 --------------------------------------------------------------*/
@@ -1146,36 +1147,133 @@ h6 {
     line-height: 160%;
     margin: 0;
 }
-
-@media (max-width: 992px) {
-    .benefits-section {
-        padding: 60px 40px 100px;
+@media (max-width: 1920px) {
+    .benefits-section .container {
+        max-width: 1400px;
     }
+}
 
-    .tab-content {
+@media (max-width: 1600px) {
+    .benefits-section .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .benefits-section {
+        padding: 80px 40px;
+    }
+    .benefits-section .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .benefits-section {
+        padding: 60px 0;
+    }
+    .benefits-section .container {
         max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .tab-headers {
+        gap: 60px;
+        margin-bottom: 40px;
+    }
+    .tab-header {
+        font-size: 28px;
+    }
+    .background-text {
+        font-size: 100px;
     }
 }
 
 @media (max-width: 768px) {
-    .tab-headers {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
     .benefits-section {
-        padding: 50px 30px 100px;
+        padding: 50px 0;
+        min-height: auto;
+    }
+    .tab-headers {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .tab-header {
+        font-size: 22px;
+    }
+    .tab-content {
+        max-width: 100%;
+    }
+    .tab-content p {
+        font-size: 15px;
+    }
+    .background-text {
+        font-size: 70px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 414px) {
     .benefits-section {
-        padding: 40px 20px 100px;
+        padding: 40px 0 60px;
     }
-
+    .container {
+        padding: 0 15px;
+    }
+    .tab-headers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+    .tab-header {
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+    .tab-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
     .background-text {
-        font-size: 80px;
+        font-size: 50px;
+        display: none; /* Скрываем фоновый текст на маленьких экранах для читаемости */
+    }
+}
+
+@media (max-width: 375px) {
+    .tab-headers {
+        gap: 15px;
+    }
+    .tab-header {
+        font-size: 18px;
+    }
+    .benefits-section {
+        padding: 35px 0 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .tab-header {
+        font-size: 17px;
+    }
+    .tab-content p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    .tab-headers {
+        gap: 10px;
+    }
+    .tab-header {
+        font-size: 16px;
+    }
+    .tab-content p {
+        line-height: 1.4;
     }
 }
 
