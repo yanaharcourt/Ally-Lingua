@@ -972,7 +972,7 @@ h6 {
         font-size: 50px;
     }
     .body-text-2 {
-        font-size: 16px;
+        font-size: 20px;
         margin-top: 4px;
         margin-bottom: 15px;
     }
@@ -1147,6 +1147,7 @@ h6 {
     line-height: 160%;
     margin: 0;
 }
+
 @media (max-width: 1920px) {
     .benefits-section .container {
         max-width: 1400px;
@@ -1199,13 +1200,13 @@ h6 {
         margin-bottom: 30px;
     }
     .tab-header {
-        font-size: 22px;
+        font-size: 28px;
     }
     .tab-content {
         max-width: 100%;
     }
     .tab-content p {
-        font-size: 15px;
+        font-size: 20px;
     }
     .background-text {
         font-size: 70px;
@@ -1228,16 +1229,16 @@ h6 {
         margin-bottom: 25px;
     }
     .tab-header {
-        font-size: 20px;
+        font-size: 24px;
         padding-bottom: 3px;
     }
     .tab-content p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.5;
     }
     .background-text {
         font-size: 50px;
-        display: none; /* Скрываем фоновый текст на маленьких экранах для читаемости */
+        display: none; 
     }
 }
 
@@ -1246,7 +1247,11 @@ h6 {
         gap: 15px;
     }
     .tab-header {
-        font-size: 18px;
+        font-size: 22px;
+    }
+    .tab-content p {
+        font-size: 15px;
+        line-height: 1.5;
     }
     .benefits-section {
         padding: 35px 0 50px;
@@ -1255,10 +1260,10 @@ h6 {
 
 @media (max-width: 360px) {
     .tab-header {
-        font-size: 17px;
+        font-size: 22px;
     }
     .tab-content p {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
