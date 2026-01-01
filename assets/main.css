@@ -438,73 +438,62 @@ h6 {
         background-size: 100% 100%;
     }
 }
+
 @media screen and (max-width: 1024px) {
-    /* 1. Разблокируем прокрутку страницы */
     html, body {
         overflow-y: auto !important;
         overflow-x: hidden !important;
         width: 100% !important;
         height: auto !important;
-        cursor: auto !important;
     }
 
-    /* 2. Настраиваем Hero-секцию как обычный блок */
     .hero-section {
         height: 100vh !important;
         min-height: 600px !important;
         position: relative !important;
         overflow: hidden !important;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
+        display: block !important; 
     }
 
-    /* 3. Контейнер текста: убираем абсолютное позиционирование */
     .text-container {
-        position: relative !important;
+        position: absolute !important;
         width: 100% !important;
-        height: auto !important;
-        display: flex !important;
-        flex-direction: column !important; /* Слова друг под другом */
-        justify-content: center !important;
-        align-items: center !important;
+        height: 100% !important;
         top: 0 !important;
         left: 0 !important;
         transform: none !important;
+        display: block !important; 
     }
 
-    /* 4. Слои слов: ставим их в поток (static) */
     .word-layer {
-        position: static !important; /* Важно! */
+        position: absolute !important; 
+        top: var(--top-position) !important;
+        left: var(--left-position) !important;
+        
         transform: none !important;
         opacity: 1 !important;
         width: auto !important;
         height: auto !important;
-        margin: 5px 0 !important;
-        text-align: center !important;
+        margin: 0 !important;
+        text-align: left !important;
     }
 
-    /* 5. Сами слова: полностью видимые и белые */
     .reveal-word {
         font-family: 'Playfair Display', serif !important;
         color: white !important;
         -webkit-text-stroke: 0 !important;
-        background: none !important; /* Убиваем градиент */
+        background: none !important; 
         opacity: 1 !important;
         visibility: visible !important;
-        transform: none !important;
-        transition: none !important;
-        animation: none !important;
         display: block !important;
+        white-space: nowrap; 
     }
 
-    /* 6. Золотое слово */
     #achieve-word {
         color: var(--accent-gold) !important;
-        -webkit-text-stroke: 0 !important;
-        background: none !important;
     }
 }
+
 /* 1920px */
 @media (max-width: 1920px) {
     .reveal-word {
@@ -657,24 +646,24 @@ h6 {
         font-size: 72px !important;
     }
     .word-layer:nth-child(1) {
-        --top-position: 22%;
+        --top-position: 34%;
         --left-position: 5%;
     }
     .word-layer:nth-child(2) {
-        --top-position: 34%;
+        --top-position: 44%;
         --left-position: 35%;
     }
     .word-layer:nth-child(3) {
-        --top-position: 46%;
-        --left-position: 5%;
+        --top-position: 54%;
+        --left-position: 13%;
     }
     .word-layer:nth-child(4) {
-        --top-position: 60%;
-        --left-position: 55%;
+        --top-position: 65%;
+        --left-position: 50%;
     }
     .word-layer:nth-child(5) {
         --top-position: 74%;
-        --left-position: 30%;
+        --left-position: 17%;
     }
 }
 
@@ -687,24 +676,24 @@ h6 {
         font-size: 64px !important;
     }
     .word-layer:nth-child(1) {
-        --top-position: 22%;
+        --top-position: 34%;
         --left-position: 5%;
     }
     .word-layer:nth-child(2) {
-        --top-position: 34%;
+        --top-position: 44%;
         --left-position: 35%;
     }
     .word-layer:nth-child(3) {
-        --top-position: 46%;
+        --top-position: 54%;
         --left-position: 5%;
     }
     .word-layer:nth-child(4) {
-        --top-position: 60%;
-        --left-position: 55%;
+        --top-position: 65%;
+        --left-position: 50%;
     }
     .word-layer:nth-child(5) {
         --top-position: 74%;
-        --left-position: 30%;
+        --left-position: 17%;
     }
 }
 
@@ -727,26 +716,27 @@ h6 {
         font-size: 52px !important;
     }
     .word-layer:nth-child(1) {
-        --top-position: 25%;
-        --left-position: 3%;
+        --top-position: 34%;
+        --left-position: 5%;
     }
     .word-layer:nth-child(2) {
-        --top-position: 37%;
-        --left-position: 10%;
+        --top-position: 44%;
+        --left-position: 35%;
     }
     .word-layer:nth-child(3) {
-        --top-position: 49%;
-        --left-position: 3%;
+        --top-position: 54%;
+        --left-position: 5%;
     }
     .word-layer:nth-child(4) {
-        --top-position: 63%;
-        --left-position: 10%;
+        --top-position: 65%;
+        --left-position: 50%;
     }
     .word-layer:nth-child(5) {
-        --top-position: 77%;
-        --left-position: 20%;
+        --top-position: 74%;
+        --left-position: 17%;
     }
 }
+
 /*--------------------------------------------------------------
 # Cursor
 --------------------------------------------------------------*/
@@ -917,6 +907,131 @@ h6 {
     transform: translateY(-5px);
 }
 
+@media (max-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1100px;
+    }
+    .why-choose-section {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .why-choose-section {
+        padding: 50px 0;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .feature-block {
+        flex: 0 1 calc(50% - 20px);
+        min-width: 0;
+    }
+    .feature-header h4 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-choose-section {
+        padding: 40px 0;
+    }
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .features-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .feature-block {
+        width: 100%;
+        padding: 0;
+    }
+    .feature-header {
+        margin-bottom: 0px;
+    }
+    .feature-header h4 {
+        font-size: 28px;
+    }
+    .feature-number {
+        font-size: 50px;
+    }
+    .body-text-2 {
+        font-size: 16px;
+        margin-top: 4px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 414px) {
+    .container {
+        padding: 0 15px;
+    }
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .feature-header h4 {
+        font-size: 24px;
+    }
+    .feature-number {
+        font-size: 45px;
+    }
+    .body-text-2 {
+        font-size: 15px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .feature-header h4 {
+        font-size: 22px;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 360px) {
+    .feature-header h4 {
+        font-size: 21px;
+    }
+    .feature-number {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    .feature-header h4 {
+        font-size: 20px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .body-text-2 {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+}
 /*--------------------------------------------------------------
 # Benefits 
 --------------------------------------------------------------*/
