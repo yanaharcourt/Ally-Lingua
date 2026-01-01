@@ -512,8 +512,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-        # Why Choose Us 
-        --------------------------------------------------------------*/
+# Why Choose Us 
+--------------------------------------------------------------*/
 .why-choose-section {
     padding: 80px;
     background-color: var(--bg-color);
@@ -3186,6 +3186,14 @@ MEDIA QUERIES MENU
 
 /* 768px */
 @media screen and (max-width: 768px) {
+    .js-cursor-init {
+        display: none !important;
+    }
+
+    body {
+        cursor: auto !important;
+    }
+    
     .mobile-menu-toggle {
         width: 45px;
         height: 45px;
@@ -3205,6 +3213,14 @@ MEDIA QUERIES MENU
 
 /* 414px */
 @media screen and (max-width: 414px) {
+    .js-cursor-init {
+        display: none !important;
+    }
+
+    body {
+        cursor: auto !important;
+    }
+    
     .mobile-menu-toggle {
         width: 40px;
         height: 40px;
@@ -3224,6 +3240,14 @@ MEDIA QUERIES MENU
 
 /* 375px */
 @media screen and (max-width: 375px) {
+    .js-cursor-init {
+        display: none !important;
+    }
+
+    body {
+        cursor: auto !important;
+    }
+    
     .mobile-menu-toggle {
         width: 35px;
         height: 35px;
@@ -3240,6 +3264,14 @@ MEDIA QUERIES MENU
 
 /* 360px */
 @media screen and (max-width: 360px) {
+    .js-cursor-init {
+        display: none !important;
+    }
+
+    body {
+        cursor: auto !important;
+    }
+
     .mobile-menu-toggle {
         width: 35px;
         height: 35px;
@@ -3253,6 +3285,13 @@ MEDIA QUERIES MENU
 
 /* 320px */
 @media screen and (max-width: 320px) {
+    .js-cursor-init {
+        display: none !important;
+    }
+
+    body {
+        cursor: auto !important;
+    }
     .mobile-menu-toggle {
         width: 35px;
         height: 35px;
@@ -3273,3 +3312,4 @@ MEDIA QUERIES MENU
         font-size: 16px;
     }
 }
+
