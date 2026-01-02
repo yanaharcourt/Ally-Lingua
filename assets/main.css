@@ -2759,7 +2759,7 @@ select {
     }
 
     .text-content h2::after {
-        margin-left: auto;
+        margin-left: 0;
         margin-right: auto;
     }
 
