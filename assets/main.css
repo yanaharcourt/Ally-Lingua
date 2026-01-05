@@ -2194,7 +2194,7 @@ h6 {
 }
 
 @media (max-width: 414px) {
-    .teachers-section { padding: 60px; }
+    .teachers-section { padding: 60px 0px; }
     .teacher-profile { display: none; }
     .teacher-profile.active { display: flex; }
     .teacher-image { height: 260px; }
@@ -5000,4 +5000,3 @@ MEDIA QUERIES MENU
         font-size: 16px;
     }
 }
-
