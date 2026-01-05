@@ -3750,7 +3750,7 @@ FAQ
     font-size: 18px;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .courses-section {
         padding: 80px 60px;
     }
@@ -3862,7 +3862,7 @@ FAQ
     .expanded-content-wrapper .price-amount {
         font-size: 36px;
     }
-}
+} */
 
 .course-benefits {
     list-style: none;
@@ -3895,6 +3895,551 @@ FAQ
     color: var(--body-3);
     font-size: 24px;
     margin-right: 10px;
+}
+
+/* 1920px */
+@media (max-width: 1920px) {
+    .courses-section {
+        padding: 100px 80px;
+    }
+    .courses-container {
+        max-width: 1600px;
+    }
+    .section-intro h2 {
+        font-size: 48px;
+    }
+    .section-intro p {
+        font-size: 18px;
+    }
+    .course-title {
+        font-size: 28px;
+    }
+    .course-description {
+        font-size: 16px;
+    }
+}
+
+/* 1600px */
+@media (max-width: 1600px) {
+    .courses-section {
+        padding: 90px 70px;
+    }
+    .courses-container {
+        max-width: 1400px;
+    }
+    .section-intro h2 {
+        font-size: 46px;
+    }
+    .section-intro p {
+        font-size: 17px;
+    }
+    .course-title {
+        font-size: 26px;
+    }
+    .course-description {
+        font-size: 16px;
+    }
+    .expanded-header {
+        gap: 35px;
+    }
+    .expanded-image-container {
+        width: 350px;
+    }
+}
+
+/* 1280px */
+@media (max-width: 1280px) {
+    .courses-section {
+        padding: 80px 60px;
+    }
+    .courses-container {
+        max-width: 1200px;
+    }
+    .section-intro {
+        margin-bottom: 70px;
+    }
+    .section-intro h2 {
+        font-size: 42px;
+    }
+    .section-intro p {
+        font-size: 16px;
+    }
+    .course-title {
+        font-size: 25px;
+    }
+    .course-description {
+        font-size: 15px;
+    }
+    .price-amount {
+        font-size: 34px;
+    }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .courses-hero {
+        height: 55vh;
+        min-height: 450px;
+    }
+    .courses-hero-content h1 {
+        font-size: 48px;
+    }
+    .courses-hero-content p {
+        font-size: 16px;
+    }
+    .courses-section {
+        padding: 70px 40px;
+    }
+    .section-intro {
+        margin-bottom: 60px;
+    }
+    .section-intro h2 {
+        font-size: 36px;
+    }
+    .section-intro p {
+        font-size: 15px;
+    }
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .course-card {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .course-title {
+        font-size: 24px;
+    }
+    .course-description {
+        font-size: 15px;
+    }
+    .price-amount {
+        font-size: 32px;
+    }
+    .course-buttons {
+        flex-direction: row;
+        gap: 12px;
+    }
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .courses-hero {
+        height: 50vh;
+        min-height: 400px;
+    }
+    .courses-hero-content h1 {
+        font-size: 36px;
+    }
+    .courses-hero-content p {
+        font-size: 15px;
+    }
+    .courses-section {
+        padding: 60px 30px;
+    }
+    .section-intro {
+        margin-bottom: 50px;
+    }
+    .section-intro h2 {
+        font-size: 30px;
+    }
+    .section-intro p {
+        font-size: 15px;
+    }
+    .courses-grid {
+        gap: 25px;
+    }
+    .course-card {
+        max-width: 100%;
+    }
+    .course-content {
+        padding: 25px;
+    }
+    .course-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .course-description {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    .price-amount {
+        font-size: 30px;
+    }
+    .course-price-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding-top: 20px;
+    }
+    .course-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .btn-primary,
+    .btn-secondary,
+    .btn-close {
+        width: 100%;
+        text-align: center;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    .course-expanded-view {
+        padding: 30px 20px;
+    }
+    .expanded-header {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .expanded-image-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .expanded-course-image {
+        height: 300px;
+        position: static;
+    }
+    .expanded-content-wrapper .course-title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .expanded-content-wrapper .course-description {
+        font-size: 16px;
+    }
+    .expanded-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .expanded-section h3 {
+        font-size: 22px;
+    }
+    .course-details-grid {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 20px;
+    }
+    .feature-list li {
+        font-size: 15px;
+    }
+    .course-benefits li {
+        font-size: 14px;
+    }
+}
+
+/* 414px */
+@media (max-width: 414px) {
+    .courses-hero {
+        min-height: 350px;
+    }
+    .courses-hero-content h1 {
+        font-size: 32px;
+    }
+    .courses-hero-content p {
+        font-size: 18px;
+    }
+    .courses-section {
+        padding: 50px 20px;
+    }
+    .section-intro {
+        margin-bottom: 40px;
+    }
+    .section-intro h2 {
+        font-size: 28px;
+    }
+    .section-intro p {
+        font-size: 15px;
+    }
+    .courses-grid {
+        gap: 20px;
+    }
+    .course-content {
+        padding: 20px;
+    }
+    .course-category {
+        font-size: 12px;
+        padding: 5px 14px;
+        margin-bottom: 12px;
+    }
+    .course-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .course-description {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .course-price-section {
+        padding-top: 18px;
+        gap: 15px;
+    }
+    .price-amount {
+        font-size: 32px;
+    }
+    .price-period {
+        font-size: 14px;
+    }
+    .course-buttons {
+        gap: 10px;
+    }
+    .btn-primary,
+    .btn-secondary,
+    .btn-close {
+        padding: 11px 0px;
+        font-size: 13px;
+    }
+    .course-expanded-view {
+        padding: 25px 15px;
+    }
+    .expanded-course-image {
+        height: 260px;
+    }
+    .expanded-content-wrapper .course-title {
+        font-size: 24px;
+    }
+    .expanded-content-wrapper .course-description {
+        font-size: 15px;
+    }
+    .expanded-section h3 {
+        font-size: 24px;
+    }
+    .feature-list li {
+        font-size: 14px;
+    }
+    .course-details-grid {
+        padding: 20px;
+        gap: 18px;
+    }
+    .detail-label {
+        font-size: 12px;
+    }
+    .detail-value {
+        font-size: 22px;
+    }
+    .course-benefits li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .price-strike {
+        font-size: 22px;
+    }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+    .courses-hero-content h1 { 
+        font-size: 24px; 
+    }
+    .courses-hero-content p { 
+        font-size: 14px; 
+    }
+
+    .section-intro { 
+        margin-bottom: 36px; 
+    }
+    .section-intro h2 { 
+        font-size: 22px; 
+    }
+    .section-intro p { 
+        font-size: 14px; 
+    }
+
+    .courses-grid { 
+        gap: 18px; 
+    }
+    .course-content { 
+        padding: 16px; 
+    }
+
+    .course-category { 
+        font-size: 11px; padding: 4px 12px; 
+    }
+    .course-title { 
+        font-size: 18px; 
+    }
+    .course-description { 
+        font-size: 13px; 
+    }
+
+    .course-price-section { 
+        gap: 14px; 
+    }
+    .price-amount { 
+        font-size: 24px; 
+    }
+    .price-period { 
+        font-size: 13px; 
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-close {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .expanded-course-image { 
+        height: 230px; 
+    }
+    .expanded-content-wrapper .course-title { 
+        font-size: 20px; 
+    }
+    .expanded-content-wrapper .course-description { 
+        font-size: 14px; 
+    }
+
+    .expanded-section h3 { 
+        font-size: 18px; 
+    }
+    .feature-list li { 
+        font-size: 13px; 
+    }
+
+    .detail-value { 
+        font-size: 19px; 
+    }
+    .price-strike { 
+        font-size: 20px; 
+    }
+}
+
+/* 360px */
+@media (max-width: 360px) {
+    .courses-hero-content h1 { 
+        font-size: 22px; 
+    }
+    .courses-section { 
+        padding: 34px 14px; 
+    }
+
+    .section-intro h2 { 
+        font-size: 20px; 
+    }
+    .course-title { 
+        font-size: 17px; 
+    }
+    .course-description { 
+        font-size: 12px; 
+    }
+
+    .price-amount { 
+        font-size: 22px; 
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-close {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+
+    .expanded-course-image { 
+        height: 215px; 
+    }
+    .expanded-section h3 { 
+        font-size: 17px; 
+    }
+    .detail-value { 
+        font-size: 18px; 
+    }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+    .courses-hero { 
+        min-height: 310px; 
+    }
+    .courses-hero-content h1 { 
+        font-size: 20px; 
+    }
+    .courses-hero-content p { 
+        font-size: 12px; 
+    }
+
+    .courses-section { 
+        padding: 32px 12px; 
+    }
+    .section-intro { 
+        margin-bottom: 30px; 
+    }
+    .section-intro h2 { 
+        font-size: 19px; 
+    }
+    .section-intro p { 
+        font-size: 12px; 
+    }
+
+    .course-content { 
+        padding: 16px; 
+    }
+    .course-category { 
+        font-size: 10px; padding: 4px 10px; 
+    }
+
+    .course-title { 
+        font-size: 16px; 
+    }
+    .course-description { 
+        font-size: 12px; 
+    }
+
+    .price-amount { 
+        font-size: 21px; 
+    }
+    .price-period { 
+        font-size: 12px; 
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-close {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    .course-expanded-view { 
+        padding: 18px 10px; 
+    }
+    .expanded-course-image { 
+        height: 200px; 
+    }
+
+    .expanded-content-wrapper .course-title { 
+        font-size: 18px; 
+    }
+    .expanded-content-wrapper .course-description { 
+        font-size: 13px; 
+    }
+
+    .expanded-section h3 { 
+        font-size: 16px; 
+    }
+    .feature-list li { 
+        font-size: 12px; 
+    }
+
+    .course-details-grid { 
+        padding: 16px; gap: 14px; 
+    }
+
+    .detail-label { 
+        font-size: 10px; 
+    }
+    .detail-value { 
+        font-size: 17px; 
+    }
+
+    .course-benefits li { 
+        font-size: 12px; margin-bottom: 7px; 
+    }
+    .price-strike { 
+        font-size: 18px; 
+    }
 }
 
 /*--------------------------------------------------------------
