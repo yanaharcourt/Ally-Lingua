@@ -2208,16 +2208,17 @@ h6 {
 }
 
 .testimonial-slider {
-    position: relative;
-    width: 1014px;
+    max-width: 1014px;
     margin: 0 auto;
+    position: relative;
 }
 
 .testimonial-card {
+    width: 100%;
+    max-width: 760px;  
+    margin: 0 auto;     
     display: flex;
-    gap: 40px;
-    position: relative;
-    width: 1013px;
+    flex-direction: column;
 }
 
 .testimonial-number {
@@ -2243,7 +2244,9 @@ h6 {
 }
 
 .testimonial-content {
-    width: 682px;
+    width: 800px;
+    align-items: center;
+    text-align: center;
 }
 
 .highlight {
@@ -2410,6 +2413,8 @@ h6 {
     }
     .testimonial-content {
         width: 100%;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -2432,6 +2437,7 @@ h6 {
     .testimonial-image {
         flex: 0 0 140px;
         height: 160px;
+        display: none;
     }
     .testimonial-content {
         font-size: 16px;
@@ -2468,12 +2474,14 @@ h6 {
     .testimonial-image {
         flex: 0 0 120px;
         height: 140px;
+        display: none;
     }
     .testimonial-number {
         display: none;
     }
     .testimonial-content {
         width: 100%;
+        align-items: center;
         text-align: center;
     }
     .testimonial-text {
@@ -2506,6 +2514,7 @@ h6 {
     .testimonial-image {
         width: 100px;
         height: 120px;
+        display: none;
     }
     .testimonial-text {
         font-size: 15px;
@@ -2531,6 +2540,7 @@ h6 {
     .testimonial-image {
         width: 90px;
         height: 110px;
+        display: none;
     }
     .testimonial-text {
         font-size: 14px;
@@ -2550,6 +2560,7 @@ h6 {
     .testimonial-image {
         width: 80px;
         height: 100px;
+        display: none;
     }
     .testimonial-text {
         font-size: 13px;
