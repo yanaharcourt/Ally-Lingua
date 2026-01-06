@@ -988,49 +988,57 @@
                     </div>
 
                     <div class="form-wrapper">
-                        <form id="booking-form">
+                        <form 
+                            id="booking-form"
+                            action="https://formspree.io/f/xjgknbnl" 
+                            method="POST"
+                        >
                             <div class="form-group">
-                                <label for="fullName">Full Name</label>
-                                <input type="text" id="fullName" name="fullName" required>
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="telephone">Telephone</label>
-                                <input type="tel" id="telephone" name="telephone" required>
+                            <label for="telephone">Telephone</label>
+                            <input type="tel" id="telephone" name="telephone" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="englishLevel">Your English Level</label>
-                                <select id="englishLevel" name="englishLevel">
-                                    <option value="beginner">Beginner</option>
-                                    <option value="elementary">Elementary</option>
-                                    <option value="intermediate">Intermediate</option>
-                                    <option value="advanced">Advanced</option>
-                                </select>
+                            <label for="englishLevel">Your English Level</label>
+                            <select id="englishLevel" name="englishLevel">
+                                <option value="beginner">Beginner</option>
+                                <option value="elementary">Elementary</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="learningGoal">Your Learning Goal</label>
-                                <select id="learningGoal" name="learningGoal">
-                                    <option value="career">Career Development</option>
-                                    <option value="academic">Academic Purposes</option>
-                                    <option value="travel">Travel</option>
-                                    <option value="general">General Improvement</option>
-                                </select>
-                                <label>
-                                    <input type="checkbox" required>
-                                    I agree to the <a href="./privacy_policy_en.html" target="_blank">Privacy Policy</a>
-                                </label>
+                            <label for="learningGoal">Your Learning Goal</label>
+                            <select id="learningGoal" name="learningGoal">
+                                <option value="career">Career Development</option>
+                                <option value="academic">Academic Purposes</option>
+                                <option value="travel">Travel</option>
+                                <option value="general">General Improvement</option>
+                            </select>
+                            </div>
+
+                            <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="privacy" required>
+                                I agree to the <a href="./privacy_policy_en.html" target="_blank">Privacy Policy</a>
+                            </label>
                             </div>
 
                             <button type="submit" class="booking-button">Book Your Trial Lesson</button>
                         </form>
-                    </div>
+                        </div>
+
                     
                 </div>
             </div>
